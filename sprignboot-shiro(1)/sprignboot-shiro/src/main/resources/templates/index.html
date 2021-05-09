@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:if="${session.account != null}">
+        <span th:text="${session.account.username}"></span>
+    </div>
+    <br>
+
+    <a href="/logout">logout</a>
+
+
+    <a href="/main">main</a><br>
+    <a href="/manage">manage</a><br>
+    <a href="/administator">administator</a>
+
+</body>
+</html>
